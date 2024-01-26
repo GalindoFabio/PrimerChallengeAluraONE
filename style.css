@@ -1,0 +1,251 @@
+/*fuente*/
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0;
+    background: #F3F5FC;
+}
+/*fuente*/
+
+*{
+    box-sizing: border-box;
+}
+
+/*Mobile first*/
+
+.contenedor-todo{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.contenedor-logo{
+    display: flex;
+    align-items: flex-start;
+    padding: 12px;
+}
+
+.logo{
+    padding: 0;
+}
+
+.contenedor-encriptar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.mensaje-entrada{
+    padding: 15px;
+    height: 70%;
+}
+
+::placeholder{
+    color: #0A3871;
+}
+
+textarea{
+    background-color: transparent;
+    color: #0A3871;
+    resize: none;
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    outline: transparent;
+    font-weight: 400;
+    font-size: 1.9em;
+    height: 100%;
+    width: 100%;
+}
+
+.botones-signo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15px;
+    width: 100%;
+    height: 30%;
+}
+
+.signo{
+    color: #67808E;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton{
+    font-size: 1em;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: 1px solid rgb(10,56,113);
+    width: 35vh;
+    margin: 5px;
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+.boton-encriptar{
+    background: #0A3871;
+    color: white;
+}
+
+.boton-desencriptar{
+    background: white;
+    color: #0A3871;
+}
+
+.imagen-muñeco{
+    display: none;
+}
+
+.contenedor-desencriptar{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
+    padding: 15px;
+    margin: 40px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.3);
+    overflow-y: auto;
+}
+
+#textosalida{
+    color: #343A40;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+#parrafo{
+    margin-top: 10px;
+    color: #495057;
+    font-size: 1em;
+}
+
+.copiar{
+    text-align: center;
+}
+
+.boton-copiar{
+    background: white;
+    color: #0A3871;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    color: #0A3871;  
+    font-weight: 600;  
+}
+
+/*Mobile first*/
+
+@media (min-width: 720px) {
+    .contenedor-todo{
+        max-width: 1040px;
+        margin: auto;
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedor-logo{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 10%;
+        height: 90vh;
+    }
+
+    .contenedor-encriptar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 90vh;
+    }
+
+    .botones-signo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .boton-encriptar:hover{
+        background: #3C70B0;
+    }
+
+    .boton-desencriptar:hover{
+        background:  #FCFAD9;      
+    }
+
+    .contenedor-desencriptar{
+        width: 30%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 12px 12px 0 0;
+    }
+
+    .imagen-muneco{
+        display: flex;
+        align-items: center;
+    }
+
+    .imagen-muñeco{
+        height: auto;
+        width: 100%;
+        height: 100%;
+        display: inline;
+    }
+
+    .mensaje-copiar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mensaje-encriptado{
+        font-size: 1em;
+    }
+
+    .copiar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boton-copiar:hover{
+        background: #F3F5FC;
+    }
+}
